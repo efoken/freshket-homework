@@ -1,0 +1,72 @@
+.root {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0 0 0 / 0.1);
+  padding: 24px 24px 20px;
+}
+
+.image {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.name {
+  background-color: rgb(24 34 0);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5625;
+  margin: -30px 20px 20px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tags span {
+  background-color: rgb(24 34 0);
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  line-height: 1.75;
+  overflow: hidden;
+  padding: 0 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tags span[data-type="earth"] {
+  background-color: rgb(166 212 60);
+}
+
+.tags span[data-type="fire"] {
+  background-color: rgb(212 60 60);
+}
+
+.tags span[data-type="air"] {
+  background-color: rgb(166 166 212);
+}
+
+.tags span[data-type="water"] {
+  background-color: rgb(60 60 212);
+}

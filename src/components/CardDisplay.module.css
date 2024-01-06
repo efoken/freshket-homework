@@ -1,0 +1,15 @@
+.root {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  margin: 24px auto;
+  max-width: 1192px;
+  padding: 0 24px;
+}
+
+@media (max-width: 374px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+  }
+}
